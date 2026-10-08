@@ -8,11 +8,11 @@
 
 <div align="center">
 
-//TOOLBOX  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,jenkins,githubactions,grafana,prometheus,linux,bash,python&perline=11" />
+<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,jenkins,githubactions,grafana,prometheus,linux,bash,python&perline=11" />
 
 
-
-//CONNECT  <a href="https://www.linkedin.com/in/bhautik-devganiya-0a297a339/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+### //LETS CONNECT
+<a href="https://www.linkedin.com/in/bhautik-devganiya-0a297a339/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="bddevganiya1@gmail.com"><img src="https://img.shields.io/badge/Email-30363d?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
 </div>
