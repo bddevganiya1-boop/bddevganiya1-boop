@@ -1,16 +1,25 @@
-## Hi there 👋
+<div align="center">
+  <img src="./assets/hero.svg" width="100%" alt="Bhautik Devganiya - DevOps Engineer" />
+</div>
 
-<!--
-**bddevganiya1-boop/bddevganiya1-boop** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
+  <img src="./assets/dashboard.svg" width="100%" alt="Infrastructure dashboard" />
+</div>
 
-Here are some ideas to get you started:
+<div align="center">
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### // TOOLBOX
+
+<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,jenkins,githubactions,grafana,prometheus,linux,bash,python&perline=11" />
+
+### // GITHUB STATS
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=bhautik&show_icons=true&theme=tokyonight&hide_border=true" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bhautik&layout=compact&theme=tokyonight&hide_border=true" />
+
+### // CONNECT
+
+<a href="https://www.linkedin.com/in/YOUR-LINK"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:YOUR-EMAIL"><img src="https://img.shields.io/badge/Email-30363d?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+
+</div>
