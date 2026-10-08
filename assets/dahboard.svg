@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="950" viewBox="0 0 900 950">
+<defs>
+  <linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5794f2" stop-opacity=".35"/><stop offset="1" stop-color="#5794f2" stop-opacity="0"/></linearGradient>
+  <pattern id="seg" width="16" height="12" patternUnits="userSpaceOnUse"><rect x="13" width="3" height="12" fill="#161b22"/></pattern>
+</defs>
+<style>
+  text{font-family:ui-monospace,Menlo,Consolas,'Courier New',monospace;font-size:14px;fill:#c9d1d9}
+  .w{fill:#e6edf3}.b{fill:#58a6ff}.g{fill:#3fb950}.d{fill:#8b949e}
+  .h{transform-box:fill-box;transform-origin:left}
+  .grow{animation:grow 14s linear infinite backwards}
+  .draw{animation:draw 14s linear infinite backwards}
+  .area{animation:areaIn 14s linear infinite backwards}
+  .line{animation:line 14s linear infinite backwards}
+  .pop{animation:pop 14s linear infinite backwards}
+  .v{transform-box:fill-box;transform-origin:bottom;animation:bars 1.8s ease-in-out infinite alternate}
+  .pulse{animation:pulse 1.6s ease-in-out infinite}
+  .blink{animation:blink 1s steps(1) infinite}
+  @keyframes grow{0%{transform:scaleX(0)}20%{transform:scaleX(1)}100%{transform:scaleX(1)}}
+  @keyframes draw{0%{stroke-dashoffset:1}25%{stroke-dashoffset:0}100%{stroke-dashoffset:0}}
+  @keyframes areaIn{0%{opacity:0}25%{opacity:1}100%{opacity:1}}
+  @keyframes line{0%{opacity:0;transform:translateX(-10px)}4%{opacity:1;transform:none}100%{opacity:1}}
+  @keyframes pop{0%{opacity:0;transform:translateY(6px)}5%{opacity:1;transform:none}100%{opacity:1}}
+  @keyframes bars{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+  @keyframes blink{50%{opacity:0}}
+</style>
+
+<rect width="900" height="950" rx="12" fill="#0d1117" stroke="#30363d"/>
+
+<!-- INFRASTRUCTURE STATUS -->
+<rect x="20" y="15" width="860" height="275" rx="8" fill="#161b22" stroke="#30363d"/>
+<text x="450" y="46" text-anchor="middle" class="b" style="font-weight:700;letter-spacing:4px">INFRASTRUCTURE STATUS</text>
+
+<g class="d">
+  <text class="d" x="60" y="95">CPU</text>        <path d="M170 91H290" stroke="#30363d" stroke-dasharray="3 4"/>
+  <text class="d" x="60" y="130">MEMORY</text>    <path d="M170 126H290" stroke="#30363d" stroke-dasharray="3 4"/>
+  <text class="d" x="60" y="165">CONTAINERS</text><path d="M170 161H290" stroke="#30363d" stroke-dasharray="3 4"/>
+  <text class="d" x="60" y="200">PODS</text>      <path d="M170 196H290" stroke="#30363d" stroke-dasharray="3 4"/>
+  <text class="d" x="60" y="235">PIPELINES</text> <path d="M170 231H290" stroke="#30363d" stroke-dasharray="3 4"/>
+  <text class="d" x="60" y="270">UPTIME</text>    <path d="M170 266H290" stroke="#30363d" stroke-dasharray="3 4"/>
+</g>
+<g fill="#0d1117">
+  <rect x="300" y="84" width="380" height="12" rx="2"/><rect x="300" y="119" width="380" height="12" rx="2"/>
+  <rect x="300" y="154" width="380" height="12" rx="2"/><rect x="300" y="189" width="380" height="12" rx="2"/>
+  <rect x="300" y="224" width="380" height="12" rx="2"/><rect x="300" y="259" width="380" height="12" rx="2"/>
+</g>
+<rect class="h grow" x="300" y="84"  width="312" height="12" rx="2" fill="#f85149"/>
+<rect class="h grow" x="300" y="119" width="243" height="12" rx="2" fill="#d29922" style="animation-delay:.2s"/>
+<rect class="h grow" x="300" y="154" width="285" height="12" rx="2" fill="#3fb950" style="animation-delay:.4s"/>
+<rect class="h grow" x="300" y="189" width="285" height="12" rx="2" fill="#3fb950" style="animation-delay:.6s"/>
+<rect class="h grow" x="300" y="224" width="380" height="12" rx="2" fill="#3fb950" style="animation-delay:.8s"/>
+<rect class="h grow" x="300" y="259" width="379" height="12" rx="2" fill="#3fb950" style="animation-delay:1s"/>
+<rect x="300" y="84"  width="380" height="12" fill="url(#seg)"/><rect x="300" y="119" width="380" height="12" fill="url(#seg)"/>
+<rect x="300" y="154" width="380" height="12" fill="url(#seg)"/><rect x="300" y="189" width="380" height="12" fill="url(#seg)"/>
+<rect x="300" y="224" width="380" height="12" fill="url(#seg)"/><rect x="300" y="259" width="380" height="12" fill="url(#seg)"/>
+<g class="w" style="font-weight:700">
+  <text class="w" x="700" y="95">82%</text><text class="w" x="700" y="130">64%</text>
+  <text class="g" x="700" y="165">12 RUNNING</text><text class="g" x="700" y="200">24 RUNNING</text>
+  <text class="g" x="700" y="235">08 SUCCESS</text><text class="g" x="700" y="270">99.98%</text>
+</g>
+
+<!-- GRAFANA PANELS -->
+<!-- Panel 1: time series -->
+<rect x="20" y="305" width="280" height="210" rx="8" fill="#161b22" stroke="#30363d"/>
+<text class="w" x="35" y="332" style="font-size:12px;font-weight:700">CPU / MEMORY</text>
+<rect x="170" y="324" width="10" height="3" fill="#5794f2"/><text class="d" x="185" y="330" style="font-size:11px">cpu</text>
+<rect x="225" y="324" width="10" height="3" fill="#ff9830"/><text class="d" x="240" y="330" style="font-size:11px">mem</text>
+<g stroke="#21262d"><path d="M35 350H285M35 385H285M35 420H285M35 455H285M35 490H285"/></g>
+<path class="area" d="M35 470L65 440L95 455L125 410L155 425L185 385L215 400L245 370L285 380L285 490L35 490Z" fill="url(#ag)" style="animation-delay:1s"/>
+<path class="draw" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" d="M35 470L65 440L95 455L125 410L155 425L185 385L215 400L245 370L285 380" fill="none" stroke="#5794f2" stroke-width="2" style="animation-delay:1s"/>
+<path class="draw" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" d="M35 480L65 470L95 475L125 455L155 462L185 440L215 452L245 430L285 436" fill="none" stroke="#ff9830" stroke-width="2" style="animation-delay:1.3s"/>
+
+<!-- Panel 2: up/down bars -->
+<rect x="310" y="305" width="280" height="210" rx="8" fill="#161b22" stroke="#30363d"/>
+<text class="w" x="325" y="332" style="font-size:12px;font-weight:700">REQUESTS / SEC</text>
+<g stroke="#21262d"><path d="M325 350H575M325 385H575M325 420H575M325 455H575M325 490H575"/></g>
+<g fill="#73bf69">
+  <rect class="v" x="328" y="405" width="16" height="85" style="animation-delay:0s;animation-duration:1.7s"/>
+  <rect class="v" x="353" y="430" width="16" height="60" style="animation-delay:.3s;animation-duration:2.1s"/>
+  <rect class="v" x="378" y="380" width="16" height="110" fill="#f2cc0c" style="animation-delay:.6s;animation-duration:1.5s"/>
+  <rect class="v" x="403" y="415" width="16" height="75" style="animation-delay:.2s;animation-duration:2.3s"/>
+  <rect class="v" x="428" y="365" width="16" height="125" fill="#f2cc0c" style="animation-delay:.9s;animation-duration:1.9s"/>
+  <rect class="v" x="453" y="395" width="16" height="95" style="animation-delay:.4s;animation-duration:1.6s"/>
+  <rect class="v" x="478" y="420" width="16" height="70" style="animation-delay:.7s;animation-duration:2.2s"/>
+  <rect class="v" x="503" y="375" width="16" height="115" fill="#f2cc0c" style="animation-delay:.1s;animation-duration:1.8s"/>
+  <rect class="v" x="528" y="405" width="16" height="85" style="animation-delay:.5s;animation-duration:2s"/>
+  <rect class="v" x="553" y="390" width="16" height="100" style="animation-delay:.8s;animation-duration:1.4s"/>
+</g>
+
+<!-- Panel 3: gauge -->
+<rect x="600" y="305" width="280" height="210" rx="8" fill="#161b22" stroke="#30363d"/>
+<text class="w" x="615" y="332" style="font-size:12px;font-weight:700">UPTIME (30d)</text>
+<path d="M675 460A65 65 0 0 1 805 460" fill="none" stroke="#21262d" stroke-width="14" stroke-linecap="round"/>
+<path class="draw" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" d="M675 460A65 65 0 0 1 805 460" fill="none" stroke="#73bf69" stroke-width="14" stroke-linecap="round" style="animation-delay:1.5s"/>
+<text x="740" y="452" text-anchor="middle" class="g" style="font-size:26px;font-weight:700">99.98%</text>
+<text x="740" y="485" text-anchor="middle" class="d" style="font-size:11px;letter-spacing:2px">SLO 99.9%</text>
+
+<!-- TECH STACK -->
+<rect x="20" y="530" width="860" height="175" rx="8" fill="#161b22" stroke="#30363d"/>
+<text x="450" y="558" text-anchor="middle" class="b" style="font-weight:700;letter-spacing:4px">TECH STACK</text>
+<g>
+  <g class="pop"><rect x="40" y="575" width="270" height="34" rx="6" fill="#0d1117" stroke="#30363d"/><circle cx="58" cy="592" r="5" fill="#ff9900"/><text x="74" y="597">AWS</text></g>
+  <g class="pop" style="animation-delay:.15s"><rect x="315" y="575" width="270" height="34" rx="6" fill="#0d1117" stroke="#30363d"/><circle cx="333" cy="592" r="5" fill="#2496ed"/><text x="349" y="597">Docker</text></g>
+  <g class="pop" style="animation-delay:.3s"><rect x="590" y="575" width="270" height="34" rx="6" fill="#0d1117" stroke="#30363d"/><circle cx="608" cy="592" r="5" fill="#326ce5"/><text x="624" y="597">Kubernetes</text></g>
+  <g class="pop" style="animation-delay:.45s"><rect x="40" y="617" width="270" height="34" rx="6" fill="#0d1117" stroke="#30363d"/><circle cx="58" cy="634" r="5" fill="#7b42bc"/><text x="74" y="639">Terraform</text></g>
+  <g class="pop" style="animation-delay:.6s"><rect x="315" y="617" width="270" height="34" rx="6" fill="#0d1117" stroke="#30363d"/><circle cx="333" cy="634" r="5" fill="#d24939"/><text x="349" y="639">Jenkins</text></g>
+  <g class="pop" style="animation-delay:.75s"><rect x="590" y="617" width="270" height="34" rx="6" fill="#0d1117" stroke="#30363d"/><circle cx="608" cy="634" r="5" fill="#2088ff"/><text x="624" y="639">GitHub Actions</text></g>
+  <g class="pop" style="animation-delay:.9s"><rect x="40" y="659" width="270" height="34" rx="6" fill="#0d1117" stroke="#30363d"/><circle cx="58" cy="676" r="5" fill="#f46800"/><text x="74" y="681">Grafana</text></g>
+  <g class="pop" style="animation-delay:1.05s"><rect x="315" y="659" width="270" height="34" rx="6" fill="#0d1117" stroke="#30363d"/><circle cx="333" cy="676" r="5" fill="#e6522c"/><text x="349" y="681">Prometheus</text></g>
+  <g class="pop" style="animation-delay:1.2s"><rect x="590" y="659" width="270" height="34" rx="6" fill="#0d1117" stroke="#30363d"/><circle cx="608" cy="676" r="5" fill="#fcc624"/><text x="624" y="681">Linux</text></g>
+</g>
+
+<!-- LIVE DEPLOYMENT LOG -->
+<rect x="20" y="720" width="860" height="210" rx="8" fill="#161b22" stroke="#30363d"/>
+<circle class="pulse" cx="60" cy="747" r="5" fill="#f85149"/>
+<text x="75" y="752" class="b" style="font-weight:700;letter-spacing:4px">LIVE DEPLOYMENT LOG</text>
+<g class="line" style="animation-delay:.5s"><text class="d" x="60" y="785">13:42:01</text><text class="g" x="150" y="785">[OK]</text><text x="200" y="785">Build completed</text></g>
+<g class="line" style="animation-delay:1.7s"><text class="d" x="60" y="811">13:42:04</text><text class="g" x="150" y="811">[OK]</text><text x="200" y="811">Docker image created</text></g>
+<g class="line" style="animation-delay:2.9s"><text class="d" x="60" y="837">13:42:07</text><text class="g" x="150" y="837">[OK]</text><text x="200" y="837">Kubernetes deployment updated</text></g>
+<g class="line" style="animation-delay:4.1s"><text class="d" x="60" y="863">13:42:11</text><text class="g" x="150" y="863">[OK]</text><text x="200" y="863">Health checks passed</text></g>
+<g class="line" style="animation-delay:5.3s"><text class="d" x="60" y="889">13:42:12</text><text class="g" x="150" y="889">[OK]</text><text class="w" x="200" y="889" style="font-weight:700">Production online</text></g>
+<g class="line" style="animation-delay:6.5s"><text class="g" x="60" y="916">bhautik@devganiya:~$</text><rect class="blink" x="238" y="904" width="9" height="14" fill="#c9d1d9"/></g>
+</svg>
