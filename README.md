@@ -19,7 +19,7 @@
 
 ### // CONNECT
 
-<a href="https://www.linkedin.com/in/YOUR-LINK"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:YOUR-EMAIL"><img src="https://img.shields.io/badge/Email-30363d?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/bhautik-devganiya-0a297a339/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:bddevganiya1@gmail.com"><img src="https://img.shields.io/badge/Email-30363d?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
 </div>
